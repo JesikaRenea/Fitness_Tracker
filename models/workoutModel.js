@@ -16,7 +16,7 @@ const workoutSchema = new Schema({
             name: {
                 type: String,
                 trim: true,
-                required: "Workout Selection required"
+                required: "Workout Name required"
             },
             duration: {
                 type: Number,
@@ -33,11 +33,11 @@ const workoutSchema = new Schema({
             },
             distance: {
                 type: Number,
-            }
-        }
+            },
+        },
+        {strict: false},
     ],
-
-});
+}, {strict: false});
 
 const Workout = mongoose.model("Workout", workoutSchema);
 
