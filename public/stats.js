@@ -54,7 +54,7 @@ function populateChart(data) {
         "Wednesday",
         "Thursday",
         "Friday",
-        "Saturday"
+        "Saturday",
       ],
       datasets: [
         {
@@ -221,3 +221,17 @@ function workoutNames(data) {
   
   return workouts;
 }
+
+
+// function getDate(data) {
+//   let dates = [];
+
+//   data.forEach(workout => {
+//     workout.day.forEach(day => {
+//       dates.push(workout.day);
+//     });
+//   });
+  
+//   return dates;
+// }
+// getDate();

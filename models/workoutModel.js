@@ -34,7 +34,7 @@ const workoutSchema = new Schema({
                 type: Number,
             },
         },
-        { strict: false },
+        // { strict: false },
     ],
 }, {
     toJSON: {
