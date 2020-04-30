@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Exercise = require("./models/index.js");
+const Workout = require("./models/index.js");
 
 const PORT = process.env.PORT || 3000;
 
@@ -17,6 +17,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", {
   useFindAndModify: false
 });
 
+app.use(require("./routes/api-routes.js"));
+app.use(require("./routes/html-routes.js"));
 
 
 app.listen(PORT, () => {
