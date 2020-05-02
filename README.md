@@ -46,7 +46,7 @@
 
   [Github Repo: Fitness Tracker](https://github.com/JesikaRenea/Fitness_Tracker)
 
-  [Deployed Heroku App](https://inserturl)
+  [Deployed Heroku App](https://fitness-tracker-jh.herokuapp.com/)
 
   ## For Questions Contact:
 
